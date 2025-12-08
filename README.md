@@ -24,7 +24,7 @@ The utilization of PowerShell scripting to automate user creation processes show
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
--Create Resources
+- Create Resources
 - Ensure Connectivity between the client and Domain Controller
 - Install Active Directory
 - Create an Admin and Normal User Account in AD
