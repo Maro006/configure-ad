@@ -68,8 +68,11 @@ The utilization of PowerShell scripting to automate user creation processes show
 <img width="1400" height="601" alt="image" src="https://github.com/user-attachments/assets/d8ab1eda-332e-4a84-b5ea-bc838b06d64f" />
 
 <h3> Install Active Directory </h3>
+<p>
+    
   - Step1: Login to DC-1
   - Step 2: Install Active Directory Domain Services (ADDS)
+</p>
 <img width="1400" height="835" alt="image" src="https://github.com/user-attachments/assets/91cb3424-60db-43cf-8a1a-8683bd619761" />
 
 
@@ -86,14 +89,17 @@ The utilization of PowerShell scripting to automate user creation processes show
 <img width="1214" height="632" alt="image" src="https://github.com/user-attachments/assets/79484e9c-06e3-412a-a972-e53a772780fc" />
 
 <h3> Create an Admin and Normal User Account in AD </h3>
+<p>
+  
   - Step 1: Open Active Directory Users and Computers (ADUC)
   - Step 2: Create an Organizational Unit (OU) called “_EMPLOYEES”
   - Step 3: Create an OU called “_ADMINS”:
+</p>
 <img width="1400" height="836" alt="image" src="https://github.com/user-attachments/assets/325f30b2-683a-4199-b961-732e3758e6d5" />
 
 <img width="1400" height="840" alt="image" src="https://github.com/user-attachments/assets/42de5713-3c53-4cc6-ae4f-53dfdc5a0d31" />
 
-Create a new employee named “Jane Doe” with the username of “jane_admin”:
+  - Create a new employee named “Jane Doe” with the username of “jane_admin”:
 
 <img width="1400" height="972" alt="image" src="https://github.com/user-attachments/assets/056bc38f-9233-48d5-80e6-4d0a21650082" />
 
@@ -107,8 +113,11 @@ Create a new employee named “Jane Doe” with the username of “jane_admin”
 <img width="1214" height="620" alt="image" src="https://github.com/user-attachments/assets/0ede0059-0ebf-43d0-8bc8-ca11e799b43c" />
 
 <h3> Join Client-1 to the domain (myadproject.com) </h3>
+<p>
+    
   - Step 1: Go to the Azure Portal (portal.azure.com)
   - Step 2: Set Client-1’s DNS settings to the DC’s Private IP address:
+</p>
 <img width="1400" height="761" alt="image" src="https://github.com/user-attachments/assets/f90955ad-84d3-4625-9116-60c2c8067d1c" />
 
   - Step 1: Restart Client-1 from the Azure Portal
@@ -123,10 +132,13 @@ Create a new employee named “Jane Doe” with the username of “jane_admin”
 <img width="1400" height="847" alt="image" src="https://github.com/user-attachments/assets/fd954a92-833e-451b-81f4-cff1f465d46a" />
 
 <h3> Setup Remote Desktop for non-administrative users on Client-1 </h3>
+<p>
+  
   - Step 1: Log into Client-1 as mydomain.com\jane_admin
   - Step 2: Open system properties
   - Step 3: Click “Remote Desktop”
   - Step 4: Allow “domain users” access to remote desktop
+</p>
   You can now log into Client-1 as a normal, non-administrative user now.
 
   - Normally you’d want to do this with Group Policy that allows you to change MANY systems at once.
@@ -134,10 +146,13 @@ Create a new employee named “Jane Doe” with the username of “jane_admin”
 <img width="1400" height="835" alt="image" src="https://github.com/user-attachments/assets/679f9ff4-316e-457e-9b7e-c17ae326fb3b" />
 
 <h3> Create a bunch of additional users and attempt to log into client-1 with one of the users </h3>
+<p>
+  
   - Step 1: Login to DC-1 as jane_admin
   - Step 2: Open PowerShell_ise as an administrator
   - Step 3: Create a new File
-  - Step 4: Paste the contents of the script into the newly created file 
+  - Step 4: Paste the contents of the script into the newly created file
+</p>
 <img width="1400" height="814" alt="image" src="https://github.com/user-attachments/assets/13ffe20f-09b2-474c-8abb-0ebf19baee5e" />
 
   - Step 1: Run the script
